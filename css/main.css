@@ -1,0 +1,467 @@
+@charset "utf-8";
+/*
+#container{}
+#mainSlider{
+    height: 891px;
+    position: relative;
+    overflow: hidden;
+}
+
+#mainSlider img{
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+    display: block;
+}
+.sliderBtn{
+    position: absolute;
+    left: 50%;
+    margin-left: -12px;
+    font-size: 0;
+    bottom: 20px;
+}
+.sliderBtn a{
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    text-indent: -9999px;
+    background: url(../images/main/navi_main_slide1.png)no-repeat;
+    margin: 0 3px;
+}
+.sliderBtn .on{
+    background-position: 0 -12px;
+}
+*/
+
+#wrapper{
+    position:relative;
+    overflow:hidden;
+    color:#fff;
+    text-shadow:rgba(0,0,0,0.1) 2px 2px 0px; 
+}
+
+#slider-wrap{
+    width:1920px;
+    height:891px;
+    position:relative;
+    overflow:hidden;
+}
+
+#slider-wrap ul#slider{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;     
+}
+
+#slider-wrap ul#slider li{
+    float: left;
+    position: relative;
+    width: 1920px;
+    height: 891px;   
+}
+
+
+#slider-wrap ul#slider li img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*btns*/
+.btns{
+    position:absolute;
+    width:50px;
+    height:60px;
+    top:50%;
+    margin-top:-25px;
+    line-height:57px;
+    text-align:center;
+    cursor:pointer; 
+    background:rgba(0,0,0,0.1);
+    z-index:100;
+    
+    
+    -webkit-user-select: none;  
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -ms-user-select: none;
+    
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    -ms-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
+.btns:hover{
+    background:rgba(0,0,0,0.3); 
+}
+
+#next{right:-50px; border-radius:7px 0px 0px 7px;}
+#previous{left:-50px; border-radius:0px 7px 7px 7px;}
+#counter{
+    top: 30px; 
+    right:35px; 
+    width:auto;
+    position:absolute;
+}
+
+#slider-wrap.active #next{right:0px;}
+#slider-wrap.active #previous{left:0px;}
+
+
+/*bar*/
+#pagination-wrap{
+    min-width:20px;
+    margin-top: 800px;
+    margin-left: auto; 
+    margin-right: auto;
+    height:15px;
+    position:relative;
+    text-align:center;
+}
+
+#pagination-wrap ul {
+    width:100%;
+}
+
+#pagination-wrap ul li{
+    margin: 0 4px;
+    display: inline-block;
+    width:5px;
+    height:5px;
+    border-radius:50%;
+    background:#fff;
+    opacity:0.5;
+    position:relative;
+    top:0;
+  
+  
+}
+
+#pagination-wrap ul li.active{
+    width:12px;
+    height:12px;
+    top:3px;
+    opacity:1;
+    box-shadow:rgba(0,0,0,0.1) 1px 1px 0px; 
+}
+
+
+/*ANIMATION*/
+#mainSlider ul, #pagination-wrap ul li{
+    -webkit-transition: all 0.3s cubic-bezier(1,.01,.32,1);
+    -moz-transition: all 0.3s cubic-bezier(1,.01,.32,1);
+    -o-transition: all 0.3s cubic-bezier(1,.01,.32,1);
+    -ms-transition: all 0.3s cubic-bezier(1,.01,.32,1);
+    transition: all 0.3s cubic-bezier(1,.01,.32,1); 
+}
+
+
+
+
+
+/*메인컨1*/
+.mainCon1{
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+.mainCon1 h1{
+    font-size: 32px;
+    font-weight: 300;
+    color: #333;
+    border-bottom: 1px solid #333;
+    width: 60px;
+    margin: 0 auto;
+}
+.mainCon1 div{
+    text-align: center;
+}
+.mainCon1 div a{}
+.con2Box1{
+    position: relative;
+    margin-top: 100px;
+    margin-right: 58px;
+    float: left;
+}
+.con2Box1:nth-child(3n){
+    margin-right: 0;
+}
+.con2Box1 img{
+    width: 388px;
+    height: 388px;
+    display: block;
+}
+.boxInfo{
+    width: 388px;
+    height: 388px;
+    text-align: center;
+    box-sizing: border-box;
+    background: rgba(17,17,17,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.boxInfo:hover{
+    opacity: 1;
+}
+
+.boxInfo div{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -22.5px;
+}
+
+.boxInfo div a{
+    display: inline-block;
+    overflow: hidden;
+    text-align: left;
+    vertical-align: middle;
+    text-indent: -9999px;
+    background: url(../images/main/hover_01.png) no-repeat;
+    width: 45px;
+    height: 45px;
+    content: "";
+}
+.boxInfo div a.prd_basket{
+    background: url(../images/main/hover_02.png) no-repeat;
+}
+.boxInfo div a.prd_wish{
+    background: url(../images/main/hover_03.png) no-repeat;
+}
+
+.boxInfo p{
+    position: absolute;
+    left: 5%;
+    bottom: 35px;
+    width: 90%;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    z-index: 2;
+}
+.boxInfo span{
+    display: block;
+    font-weight: 300;
+}
+.boxInfo span.t1{
+    font-size: 12px;
+}
+.boxInfo span.t2{
+}
+.boxInfo span.t3{
+    font-size: 16px;
+    padding-top: 10px;
+}
+.group_txt a{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-align: left;
+}
+
+/*메인컨2*/
+.mainCon2{
+    padding-top: 200px;
+    padding-bottom: 100px;
+    background: #ebebeb;
+}
+.mainCon2 h1{
+    font-size: 32px;
+    font-weight: 300;
+    color: #333;
+    border-bottom: 1px solid #333;
+    width: 100px;
+    margin: 0 auto;
+}
+.mainCon2 div{
+    text-align: center;
+}
+.mainCon2 div a{}
+.con2Box2{
+    position: relative;
+    margin-top: 100px;
+    margin-right: 58px;
+    float: left;
+}
+.con2Box2:nth-child(3n){
+    margin-right: 0;
+}
+.con2Box2 img{
+    width: 388px;
+    height: 388px;
+    display: block;
+}
+.boxInfo{
+    width: 388px;
+    height: 388px;
+    text-align: center;
+    box-sizing: border-box;
+    background: rgba(17,17,17,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.boxInfo:hover{
+    opacity: 1;
+}
+
+.boxInfo div{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -22.5px;
+}
+
+.boxInfo div a{
+    display: inline-block;
+    overflow: hidden;
+    text-align: left;
+    vertical-align: middle;
+    text-indent: -9999px;
+    background: url(../images/main/hover_01.png) no-repeat;
+    width: 45px;
+    height: 45px;
+    content: "";
+}
+.boxInfo div a.prd_basket{
+    background: url(../images/main/hover_02.png) no-repeat;
+}
+.boxInfo div a.prd_wish{
+    background: url(../images/main/hover_03.png) no-repeat;
+}
+
+.boxInfo p{
+    position: absolute;
+    left: 5%;
+    bottom: 35px;
+    width: 90%;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    z-index: 2;
+}
+.boxInfo span{
+    display: block;
+    font-weight: 300;
+}
+.boxInfo span.t1{
+    font-size: 12px;
+}
+.boxInfo span.t2{
+}
+.boxInfo span.t3{
+    font-size: 16px;
+    padding-top: 10px;
+}
+.group_txt a{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-align: left;
+}
+
+/*메인컨3*/
+.mainCon3{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.mainCon3 div{
+    position: relative;
+}
+.mainCon3 .con3Box1{
+    float: left;
+}
+.mainCon3 .boxIn{
+    position: absolute;
+    top: -12px;
+    left: -10px;
+    padding: 0 10px 15px 0;
+    background: #fff;
+    z-index: 10;
+}
+.mainCon3 div h3{
+    margin-top: -15px;
+    color: #333;
+    font-size: 25px;
+    line-height: 52px;
+    letter-spacing: 1.92px;
+    font-weight: 600;
+}
+.mainCon3 div h2{
+    display: block;
+    font-size: 16px;
+    letter-spacing: 3.12px;
+    color: #efa4aa;
+    font-weight: 500;
+}
+.mainCon3 div p{
+    margin-top: 16px;
+    color: #666;
+    font-size: 14px;
+}
+.mainCon3 div.con3Box1{
+    width:200px;
+    height:200px;
+    border:5px solid #636363;
+}
+.mainCon3 .boxOut{
+    float: left;
+    width: 18.33%;
+    margin-top: 35px;
+    padding-left: 120px;
+    display: inline-block;
+}
+.mainCon3 em{
+    font-size: 16px;
+    color: #96603d;
+    opacity: 0.4;
+}
+.mainCon3 li p{}
+.mainCon3 .box_name{
+    margin-top: 10px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+}
+.mainCon3 .box_name2{
+    position: relative;
+}
+.mainCon3 img{
+    width: 25px;
+    position: absolute;
+    top: 0;
+    left: 65px;
+}
+.mainCon3 .box_info{
+    height: 63px;
+    margin-top: 10px;
+    color: #666;
+    font-size: 14px;
+    line-height: 21px;
+    overflow: hidden;
+}

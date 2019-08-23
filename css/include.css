@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+/*헤더시작*/
+#header{}
+.headerTop {
+    background: #111111;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+}
+.headerTop a{
+    color: #fff;
+    padding: 0 20px;
+    display: block;
+}
+.cs_star{
+    float: left;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+.cs_star a{}
+.utill{
+    float: right;
+}
+.utill li{
+    float: left;
+    border-left: 1px solid #000000;
+}
+.utill li a{}
+.utill li a img{
+    margin-left: 20px;
+    width: 11px;
+    height: 11px;
+}
+
+/*LOGO*/
+.logo{
+    padding: 15px 0;
+    text-align: center;
+    background: #111111;
+}
+.logo h1{}
+.logo h1 a{}
+.logo h1 img{}
+
+/*gnb*/
+.gnb{
+    background: #b51420;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+}
+.gnb ul{}
+.gnb ul li{
+    float: left;
+    font-size: 15px;
+}
+.gnb ul li a{
+    display: block;
+    color: #fff;
+}
+.gnb ul li a:after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: #fff;
+    margin: 0 20px;
+}
+.gnb ul li:last-child a:after{
+    display: none;
+}
+
+
+/*푸터시작*/
+#footer{
+    background: #363636;
+    border-top: 1px solid #ccc;
+    padding-bottom: 50px;
+}
+#footer .inner{
+    position: relative;
+    padding-top: 50px;
+}
+.fLogo{
+    float: left;
+    margin-top: 17px;
+}
+.fLogo img{
+    
+}
+.fInfo{
+    float: left;
+    color: #ccc;
+    margin-left: 150px;
+    font-weight: 400;
+}
+.fInfo ul{
+    font-size: 12px;
+    color: #ccc;
+}
+.fInfo ul li{
+    float: left;
+    font-size: 0;
+}
+.fInfo ul li:after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 8px;
+    background: #ccc;
+    margin: 0 20px;
+}
+.fInfo ul li:last-child:after{
+    display: none;
+}
+.fInfo ul li a{
+     font-size: 12px;
+     color: #ccc;
+}
+.fInfo p{
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 200;
+    word-spacing: 5px;
+}
+.fInfo .fInfo_in{
+    font-weight: 100;
+}
+.fMark{
+    position: absolute;
+    right: 0;
+}
+.fMark a{}
+.fMark a img{}
+
+.topBtn{
+    width: 50px;
+    background: #111111;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.topBtn a{
+    color: #fff;
+    display: block;
+}
+
+
+
+
+
+

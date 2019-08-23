@@ -1,0 +1,301 @@
+@charset "utf-8";
+body{
+    font-family: 'NotoSans','NotoSerif','sans-serif','NanumMyeongjo';
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p,dl,dd{
+    margin: 0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#wrap{
+    width: 100%;
+}
+.inner{
+    width: 1280px;
+    margin: 0 auto;
+}
+.cf:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+/*헤더시작*/
+#header{}
+.headerTop {
+    background: #111111;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+}
+.headerTop a{
+    color: #fff;
+    padding: 0 20px;
+    display: block;
+}
+.cs_star{
+    float: left;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+.cs_star a{}
+.utill{
+    float: right;
+}
+.utill li{
+    float: left;
+    border-left: 1px solid #000000;
+}
+.utill li a{}
+.utill li a img{
+    margin-left: 20px;
+    width: 11px;
+    height: 11px;
+}
+
+/*LOGO*/
+.logo{
+    padding: 15px 0;
+    text-align: center;
+    background: #111111;
+}
+.logo h1{}
+.logo h1 a{}
+.logo h1 img{}
+
+/*gnb*/
+.gnb{
+    background: #b51420;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+}
+.gnb ul{}
+.gnb ul li{
+    float: left;
+    font-size: 15px;
+}
+.gnb ul li a{
+    display: block;
+    color: #fff;
+}
+.gnb ul li a:after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: #fff;
+    margin: 0 20px;
+}
+.gnb ul li:last-child a:after{
+    display: none;
+}
+
+/*컨테이너*/
+#container{}
+.subSlider{
+    height: 448px;
+    position: relative;
+}
+.subSlider h1{
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    font-family: 'NanumMyeongjo';
+    font-weight: 900;
+    font-size: 60px;
+    right: 50%;
+    margin-right: -224.24px;
+    top: 50%;
+    margin-top: -34.5px;
+}
+.subSlider span{
+    position: absolute;
+    border-right: 1px solid #fff;
+    height: 130px;
+    right: 50%;
+    bottom: 0;
+    display: block;
+    z-index: 2;
+}
+.subSlider img{
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+}
+
+/*서브메인1*/
+.subMain1{
+    font-family: 'NanumMyeongjo';
+    text-align: center;
+    padding-top: 145px;
+    padding-bottom: 145px;
+}
+.subMain1 div{}
+.subMain1 img{
+    display: inline-block;
+    margin-bottom: 70px;
+}
+.subMain1 img:last-child{
+    margin: 0;
+}
+.subMain1 h2{
+    font-weight: 900;
+    line-height: 40px;
+}
+.subMain1 span{
+    border-right: 1px solid #000000;
+    height: 100px;
+    margin: 50px 50% 50px 0;
+    display: block;
+}
+.subMain1 h3{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 100px;
+}
+
+/*서브메인2*/
+.subMain2{
+    font-family: 'NanumMyeongjo';
+    text-align: center;
+    padding-top: 145px;
+    padding-bottom: 145px;
+    background: url(../image/images/SS_SL02.png) no-repeat;
+    font-size: 0;
+}
+.subMain2 div{}
+.subMain2 .akbImg{
+    display: inline-block;
+    margin-bottom: 70px;
+}
+.subMain2 h2{
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 40px;
+}
+.subMain2 .akImg{
+    display: inline-block;
+    margin-right: 90px;
+    margin-top: 115px;
+    margin-bottom: 115px;
+}
+.subMain2 .ak{
+    margin-right: 0;
+    
+}
+.subMain2 h3{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/*서브메인3*/
+.subMain3{
+    font-family: 'NanumMyeongjo';
+    text-align: center;
+    padding-top: 145px;
+    padding-bottom: 300px;
+    font-size: 0;
+}
+.subMain3 img{
+    margin-bottom: 135px;
+    margin-left: 140px;
+}
+.subMain3 .icon:first-child{
+    margin-left: 0;
+}
+.subMain3 h3{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.subMain3 h3:last-child{
+    margin-bottom: 0;
+}
+
+/*푸터시작*/
+#footer{
+    background: #363636;
+    border-top: 1px solid #ccc;
+    padding-bottom: 50px;
+}
+#footer .inner{
+    position: relative;
+    padding-top: 50px;
+}
+.fLogo{
+    float: left;
+    margin-top: 17px;
+}
+.fLogo img{
+    
+}
+.fInfo{
+    float: left;
+    color: #ccc;
+    margin-left: 150px;
+    font-weight: 400;
+}
+.fInfo ul{
+    font-size: 12px;
+    color: #ccc;
+}
+.fInfo ul li{
+    float: left;
+    font-size: 0;
+}
+.fInfo ul li:after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 8px;
+    background: #ccc;
+    margin: 0 20px;
+}
+.fInfo ul li:last-child:after{
+    display: none;
+}
+.fInfo ul li a{
+     font-size: 12px;
+     color: #ccc;
+}
+.fInfo p{
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 200;
+    word-spacing: 5px;
+}
+.fInfo .fInfo_in{
+    font-weight: 100;
+}
+.fMark{
+    position: absolute;
+    right: 0;
+}
+.fMark a{}
+.fMark a img{}
+
+.topBtn{
+    width: 50px;
+    background: #111111;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.topBtn a{
+    color: #fff;
+    display: block;
+}
+
